@@ -1,14 +1,14 @@
 /* Tailwind CSS v2.0+ */
 import React from 'react'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure} from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import {Link} from 'react-router-dom';
 
 const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'Best seller', href: '#', current: false },
-    { name: 'Find a store', href: '#', current: false },
-    { name: 'Blog', href: '#', current: false },
+    { name: 'Home', to: 'home', current: true },
+    { name: 'Best seller', to: 'books', current: false },
+    { name: 'Blog', to: 'blog', current: false },
+    { name: 'Find a store', to: 'stores', current: false }
 ]
 
 function classNames(...classes) {
@@ -48,20 +48,19 @@ export default function NavBar() {
                                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                                     <button
                                         type="button"
-                                        className="bg-indigo-800 p-1 rounded-full text-white hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                                    >
+                                        className="bg-indigo-800 p-1 rounded-full text-white hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                                         <span className="sr-only">View notifications</span>
                                         <BellIcon className="h-6 w-6" aria-hidden="true" />
                                     </button>
                                 </div>
                             </div>
                             {/* Navigation bar */}
-                            <div className="hidden sm:block sm:ml-6 md:flex space-x-10 items-center justify-center py-6">
+                            <div className="hidden sm:block sm:ml-6 md:flex space-x-10 items-center justify-center py-4">
                                 <div className="flex space-x-4">
                                     {navigation.map((item) => (
-                                        <a
+                                        <Link
                                             key={item.name}
-                                            href={item.href}
+                                            to={item.to}
                                             className={classNames(
                                                 item.current ? 'bg-indigo-900 text-white' : 'text-gray-600 hover:bg-indigo-900 hover:text-white',
                                                 'px-3 py-2 rounded-md text-sm font-medium'
@@ -69,7 +68,7 @@ export default function NavBar() {
                                             aria-current={item.current ? 'page' : undefined}
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
@@ -80,15 +79,13 @@ export default function NavBar() {
                                 {navigation.map((item) => (
                                     <Disclosure.Button
                                         key={item.name}
-                                        as="a"
-                                        href={item.href}
                                         className={classNames(
                                             item.current ? 'bg-indigo-900 text-white' : 'text-gray-600 hover:bg-indigo-900 hover:text-white',
                                             'block px-3 py-2 rounded-md text-base font-medium'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
-                                        {item.name}
+                                        <Link to={item.to}>{item.name} </Link>
                                     </Disclosure.Button>
                                 ))}
                             </div>
