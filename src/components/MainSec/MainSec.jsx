@@ -11,7 +11,6 @@ function MainSec(props) {
                                 <div className="col-span-6 sm:col-span-3 sm:max-w-lg">
                                     <h3 className='text-xl tracking-tight text-gray-900 sm:text-6xl'>{props.header}</h3>
                                     <p className='mt-4 text-xl text-gray-500'>{props.desc}</p>
-                                    <button className='inline-block text-center bg-indigo-900 border border-transparent rounded-md my-5 py-2 px-4 font-medium text-white hover:bg-indigo-700'>View all</button>
                                 </div>
                                 <div className="col-span-6 sm:col-span-3">
                                     <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">

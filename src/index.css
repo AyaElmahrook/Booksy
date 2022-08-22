@@ -1,8 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-#txtSearch{
-  width:50%
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.pagination li {
+  margin: 1px 2px;
+}
+.pagination li a {
+  border-radius: 5px;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.pagination li a:hover:not(.pagination-link-active) {
+  background-color: #ddd;
+  color: #131722;
+}
+.pagination .previous,
+.pagination .pagination-link {
+  background-color: #131722;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.pagination .pagination-link-active {
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.pagination .pagination-link-active a {
+  background-color: #131722;
+  color: #fff;
+}
+
+.parent-block {
+  position: relative;
+}
+.parent-block .child-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent-block .child-block .child-pose {
+  background-color: transparent;
+  color: transparent;
+  text-align: center;
+  position: absolute;
+  inset: 0px 0px 100% 0px;
+  padding: 10px 7px;
+  margin-bottom: 0px;
+  transition: all 1s;
+}
+.parent-block:hover .child-pose {
+  background-color: rgba(49, 46, 129, 0.9);
+  color: #fff;
+  inset: 0px 0px 80% 0px;
+}
+
+#txtSearch {
+  width: 50%;
+}
+
+.search-list {
+  z-index: 1000;
+}/*# sourceMappingURL=index.css.map */
