@@ -16,10 +16,9 @@ body {
   margin: 1px 2px;
 }
 .pagination li a {
-  border-radius: 5px;
   padding: 1px 5px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   transition: background-color 0.3s;
 }
 .pagination li a:hover:not(.pagination-link-active) {
@@ -28,13 +27,11 @@ body {
 }
 .pagination .previous,
 .pagination .pagination-link {
-  background-color: #131722;
+  border: 1px solid #000;
   padding: 1px 5px;
-  border-radius: 5px;
 }
 .pagination .pagination-link-active {
   border: 1px solid #fff;
-  border-radius: 5px;
 }
 .pagination .pagination-link-active a {
   background-color: #131722;

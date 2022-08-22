@@ -1,23 +1,14 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, {useState,useContext } from 'react'
 import ReactPaginate from 'react-paginate'
 import MainSec from '../MainSec/MainSec';
 import { Link } from 'react-router-dom';
+import { booksContext } from '../Context/Store';
 
 function Books() {
-    const [books, setBooks] = useState([])
-    const [loading,setLoading] = useState(true);
-    async function getBooks() {
-        let { data } = await axios.get("http://gutendex.com/books/")
-        setBooks(data.results);
-        setLoading(false);
-    }
-    useEffect(() => {
-        getBooks()
-    }, [])
+   let {books,loading}=useContext(booksContext)
   //initialize (pagination variables) page counter, no of results per page, offset pages counter
   const [currentPage, setCurrentPage] = useState(0);
-  const PER_PAGE = 12;
+  const PER_PAGE = 8;
   const offset = currentPage * PER_PAGE;
   const pageCounter = Math.ceil(books.length / PER_PAGE);
   // Invoke when user click to request another page.
@@ -53,7 +44,7 @@ function Books() {
                     </div>}
                 </div>
                 <ReactPaginate
-        previousLabel="Per"
+        previousLabel="Pre"
         breakLabel="..."
         nextLabel="Nex"
         pageCount={pageCounter}

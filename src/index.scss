@@ -15,10 +15,9 @@ body {
   li {
     margin: 1px 2px;
     a {
-      border-radius: 5px;
       padding: 1px 5px;
       text-decoration: none;
-      color: #fff;
+      color: #000;
       -webkit-transition: background-color 0.3s;
       transition: background-color 0.3s;
       &:hover:not(.pagination-link-active) {
@@ -30,14 +29,12 @@ body {
 
   .previous,
   .pagination-link {
-    background-color: #131722;
+   border: 1px solid #000;
     padding: 1px 5px;
-    border-radius: 5px;
   }
 
   .pagination-link-active {
     border: 1px solid #fff;
-    border-radius: 5px;
     a {
       background-color: #131722;
       color: #fff
