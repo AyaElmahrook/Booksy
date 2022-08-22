@@ -1,8 +1,8 @@
 /* Tailwind CSS v2.0+ */
 import React from 'react'
-import { Disclosure} from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navigation = [
     { name: 'Home', to: 'home', current: true },
@@ -35,21 +35,21 @@ export default function NavBar() {
                                         <h2 className="text-xl font-bold tracking-tight text-gray-900">Booksy</h2>
                                     </div>
                                 </div>
-                                {/* Navigation bar */}
-                            <div className="hidden sm:block sm:ml-6 md:flex space-x-10 items-center justify-center py-4">
-                                <div className="flex space-x-4">
-                                    {navigation.map((item) => (
-                                        <NavLink
-                                            key={item.name}
-                                            to={item.to}
-                                            className={({ isActive }) => isActive ? "bg-indigo-900 text-white px-3 py-2 rounded-md text-sm font-medium" : "text-gray-600 hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}
-                                            aria-current={item.current ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </NavLink>
-                                    ))}
+                                {/* Navigation links */}
+                                <div className="hidden sm:block sm:ml-6 md:flex space-x-10 items-center justify-center py-4">
+                                    <div className="flex space-x-4">
+                                        {navigation.map((item) => (
+                                            <NavLink
+                                                key={item.name}
+                                                to={item.to}
+                                                className={({ isActive }) => isActive ? "bg-indigo-900 text-white px-3 py-2 rounded-md text-sm font-medium" : "text-gray-600 hover:bg-indigo-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}
+                                                aria-current={item.current ? 'page' : undefined}
+                                            >
+                                                {item.name}
+                                            </NavLink>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
                                 {/* navbar left part */}
                                 <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                                     <button
