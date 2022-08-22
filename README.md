@@ -1,18 +1,20 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of Contents:
+1-Home
+2-All books
+3-Blogs
+4-Navigation (provided in NavBar component with Routes at App.js)
+5-Pagination (provided in Books component)
+6-Search 
 
 ## Available Scripts
+ Getting Started with npx create-react-app
+ In the project modules, I've installed Tailwind Css, React-router-dom, Axios, Fontawesome and react-paginate
 
-In the project directory, you can run:
+### Run `npm start`
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Home page is showing first 8 popular books, so view all books 
+navigate to All books
+Bolgs ,till now, is just a created to navigate to extra link.
 
 ### `npm test`
 
