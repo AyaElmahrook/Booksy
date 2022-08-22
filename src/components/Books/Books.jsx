@@ -20,7 +20,7 @@ const [filteredBooks, setFilteredBooks] = useState([]);
 const [bookNotFound,setBookNotFound]=useState(false);
 function findBook({target}){
   if(target.value !== ""){
-    let searchBooks= books.filter((book)=>{return book.title.includes(target.value)});
+    let searchBooks= books.filter((book)=>{return book.title.toLowerCase().includes(target.value.toLowerCase())});
     setFilteredBooks(searchBooks);
     if(searchBooks.length !== 0){
         setBookNotFound(false);
