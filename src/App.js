@@ -7,10 +7,13 @@ import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import ViewBook from './components/Books/ViewBook';
 import BooksContextProvider from './components/Context/Store';
+import ScrollToTop from './components/Scroll/ScrollToTop';
+
 
 function App() {
   return (
     <>
+    <ScrollToTop/>
     <BooksContextProvider>
       <NavBar></NavBar>
       <Routes>       
