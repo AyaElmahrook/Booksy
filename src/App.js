@@ -8,6 +8,7 @@ import Blog from './components/Blog/Blog';
 import ViewBook from './components/Books/ViewBook';
 import BooksContextProvider from './components/Context/Store';
 import ScrollToTop from './components/Scroll/ScrollToTop';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
         <Route path='blog' element={<Blog />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
-      </BooksContextProvider>
+    </BooksContextProvider>
+    <Footer/>
     </>
   );
 }
