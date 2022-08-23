@@ -32,7 +32,7 @@ export default function NavBar() {
                                 {/* navbar right part (logo)*/}
                                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                     <div className="flex-shrink-0 flex items-center">
-                                        <h2 className="text-xl font-bold tracking-tight text-gray-900">Booksy</h2>
+                                        <h2 className="text-2xl font-bold tracking-tight text-indigo-900">Booksy</h2>
                                     </div>
                                 </div>
                                 {/* Navigation links */}

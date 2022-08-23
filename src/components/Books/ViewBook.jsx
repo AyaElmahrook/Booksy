@@ -26,8 +26,8 @@ function ViewBook() {
     }, [])
     return (
         <>
-            {loading ? <><h1 className='text-2xl font-bold tracking-tight text-gray-900'>Loading book details...</h1></> : <>
-                <div className="bg-white flex items-center">
+            {loading ? <div className='view-h flex items-center justify-center'><h1 className='text-2xl font-bold tracking-tight text-gray-900'><i className="fa-solid fa-spinner fa-spin"></i> Loading book details...</h1></div> : <>
+                <div className="bg-gray-100 flex items-center">
                     {/* Product info */}
                     <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 ">
                         <div className="lg:col-span-2 lg:pr-8">
