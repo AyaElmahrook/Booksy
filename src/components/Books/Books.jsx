@@ -43,7 +43,7 @@ function Books() {
             {/* Search input */}
             <div className="flex items-center justify-center w-100">
                 <div className="md:flex space-x-10 text-center" id="txtSearch">
-                    <input type="text" name="search" placeholder='Search by author, title, name' autoComplete="given-name"
+                    <input type="text" name="search" placeholder='Search by book name' autoComplete="given-name"
                         className="mt-1 focus:ring-indigo-500 w-100 p-3 bg-gray-200 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                         onChange={(e) => { return findBook(e) }} />
                 </div>
