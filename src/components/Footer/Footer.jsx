@@ -11,10 +11,10 @@ function Footer() {
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="flex -space-x-2 overflow-hidden">
             <i className="fa-brands fa-facebook-f inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
-            <i class="fa-brands fa-whatsapp inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
-            <i class="fa-brands fa-twitter inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
-            <i class="fa-brands fa-linkedin-in inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
-            <i class="fa-brands fa-instagram inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
+            <i className="fa-brands fa-whatsapp inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
+            <i className="fa-brands fa-twitter inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
+            <i className="fa-brands fa-linkedin-in inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
+            <i className="fa-brands fa-instagram inline-block p-3 text-center rounded-full ring-1 ring-dark"></i>
       </div>
             </div>
           </div>
