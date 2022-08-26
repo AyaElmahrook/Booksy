@@ -5,9 +5,9 @@ function MainSec(props) {
         <>
             <main>
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="px-4 py-3 sm:px-0">
-                        <div className="rounded-lg h-92 bg-gray-200 p-3">
-                            <div className="grid grid-cols-6 gap-6 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static lg:flex lg:items-center lg:justify-between">
+                    <div className="py-3 sm:px-0">
+                        <div className="rounded-lg h-90 bg-gray-200">
+                            <div className="grid grid-cols-6 gap-6 relative max-w-7xl mx-auto p-4 sm:px-6 lg:px-8 sm:static lg:flex lg:items-center lg:justify-between">
                                 <div className="col-span-6 sm:col-span-3 sm:max-w-lg">
                                     <h3 className='text-xl tracking-tight text-gray-900 sm:text-6xl'>{props.header}</h3>
                                     <p className='mt-4 text-xl text-gray-500'>{props.desc}</p>

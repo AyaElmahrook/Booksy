@@ -22,7 +22,7 @@ function ScrollToTop() {
    
     return (
         <> 
-        <div className='fixed right-2 bottom-2'>
+        <div className='fixed right-2 bottom-2 ze-index'>
       {isVisible?<button onClick={scrollToTop} 
       className="inline-flex items-center p-3 rounded-full shadow-sm text-white bg-indigo-900 transition-opacity hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
        <i className="fa-solid fa-arrow-up-long"></i>

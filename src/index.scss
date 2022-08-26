@@ -58,6 +58,9 @@ body {
       transition: all 1s;
       }
   }
+  .child-block+div{
+    height:275px
+  }
   &:hover{
     .child-pose{
       background-color:rgba(49,46,129,0.9);
@@ -67,9 +70,9 @@ body {
   }
 }
 #txtSearch{
-  width:35%
+  width:50vw
 }
-.search-list{
+.ze-index{
   z-index: 1000;
 }
 .view-h

@@ -56,6 +56,9 @@ body {
   margin-bottom: 0px;
   transition: all 1s;
 }
+.parent-block .child-block + div {
+  height: 275px;
+}
 .parent-block:hover .child-pose {
   background-color: rgba(49, 46, 129, 0.9);
   color: #fff;
@@ -63,10 +66,10 @@ body {
 }
 
 #txtSearch {
-  width: 35%;
+  width: 50vw;
 }
 
-.search-list {
+.ze-index {
   z-index: 1000;
 }
 
