@@ -19,6 +19,7 @@ function Books() {
     const [filteredBooks, setFilteredBooks] = useState([]);
     const [bookNotFound, setBookNotFound] = useState(false);
     function findBook({ target }) {
+        console.log(target.value);
         if (target.value !== "") {
             let searchBooks = books.filter((book) => { return book.title.toLowerCase().includes(target.value.toLowerCase()) });
             setFilteredBooks(searchBooks);
@@ -69,7 +70,7 @@ function Books() {
                                         </Link>
                                     </div>
                                     <h3 className="mt-4 text-lg font-medium text-gray-900">{book.title}</h3>
-                                    <p className="mt-1 text-sm  text-gray-700">{book.authors[0].name}</p>
+                                    {book.authors.map((author,i)=><p key={i} className="mt-1 text-sm  text-gray-700">{author.name}</p>)}                        
                                 </div>
                             )
                         }) : bookNotFound ? <h1 className="text-4xl text-gray-900">Book not found</h1> :
